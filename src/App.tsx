@@ -1,7 +1,7 @@
-function App() {
+import Homepage from "./pages/Homepage";
+
+export default function App() {
   return (
-    <p>Lorenzo Corallo</p>
+    <Homepage />
   )
 }
-
-export default App
