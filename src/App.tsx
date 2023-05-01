@@ -1,5 +1,6 @@
 import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom"
 import Homepage from "./pages/Homepage"
+import Header from "./components/Header"
 
 const router = createBrowserRouter([
   {
@@ -20,7 +21,8 @@ export default function App() {
 
 function Layout() {
   return (
-    <div>
+    <div className="min-h-screen dark:bg-slate-900 dark:text-white">
+      <Header />
       <Outlet />
     </div>
   )
