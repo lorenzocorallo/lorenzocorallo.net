@@ -1,9 +1,9 @@
-import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
-import Homepage from "./pages/Homepage";
+import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom"
+import Homepage from "./pages/Homepage"
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: "/",
     element: <Layout />,
     children: [
       {
@@ -15,15 +15,12 @@ const router = createBrowserRouter([
 ])
 
 export default function App() {
-  return (
-    <RouterProvider router={router} />
-  )
+  return <RouterProvider router={router} />
 }
 
 function Layout() {
-  return(
+  return (
     <div>
-
       <Outlet />
     </div>
   )

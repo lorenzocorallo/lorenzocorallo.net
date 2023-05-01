@@ -1,5 +1,5 @@
 export default function Homepage() {
-  return(
+  return (
     <div>
       <p>Lorenzo Corallo</p>
     </div>
